@@ -6,3 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 	return render_template("index.html")
+
+@app.route("/kayos/user/<username>")
+def show_user_profile(username):
+	pass
