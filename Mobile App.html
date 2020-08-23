@@ -193,24 +193,39 @@
 
     </div>
 
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Lorem Ipsum</h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
+                <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--THE FOOTER SECTION-->
+    <footer class="w3-container w3-padding-16 w3-center w3-deep-purple">
+        <div class="w3-xlarge w3-padding-12">
+            <a href="https://web.facebook.com/Sporadica-Interactive-Studios-102400844789168"><i class="fa fa-facebook-official w3-hover-opacity"style="color:white;"></i></a>
+            <a href="https://www.instagram.com/sporadicastudios"><i class="fa fa-instagram w3-hover-opacity"style="color:white;"></i></a>
+            <a href="https://twitter.com/SporadicaS"> <i class="fa fa-twitter w3-hover-opacity" style="color:white;"></i></a>
+        </div>
+
+
+        <div class="footer-copy">
+            <p>&copy; Sporadica Interactive Studio 2020.</p>
+        </div>
+        </div>
+    </footer>
     <!--Toggle sidebar-->
     <script>
-        // Script for side navigation
-        function w3_open() {
-            var x = document.getElementById("mySidebar");
-            x.style.width = "300px";
-            x.style.paddingTop = "10%";
-            x.style.display = "block";
-        }
-
-        // Close side navigation
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-
-        // Used to toggle the menu on smaller screens when clicking on the menu button
-        function openNav() {
+        function myFunction() {
             var x = document.getElementById("navDemo");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
@@ -219,14 +234,12 @@
             }
         }
     </script>
-
     <!--Darkmode-->
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js "></script>
-
     <script>
         const options = {
-            bottom: '35px', // default: '32px'
-            right: '33px', // default: '32px'
+            bottom: '125px', // default: '32px'
+            right: '35px', // default: '32px'
             left: 'unset', // default: 'unset'
             time: '0.1s', // default: '0.3s'
             mixColor: '#fff', // default: '#fff'
