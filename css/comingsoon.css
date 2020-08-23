@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -6,11 +7,19 @@ img {
     max-width: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Montserrat", sans-serif
 }
 
+
 /* cover */
+
 #cover {
     background: #222 url('../img/min/background-min.jpg') center center no-repeat;
     background-size: cover;
@@ -35,18 +44,26 @@ body, h1, h2, h3, h4, h5, h6 {
     letter-spacing: 10px;
 }
 
+
 /* carousel */
+
 #carousel-home {
     height: 695px;
 }
-.carousel-inner, .carousel-item,.carousel-inner img {
+
+.carousel-inner,
+.carousel-item,
+.carousel-inner img {
     height: 100%;
 }
 
+
 /* section content */
+
 .section-content {
     padding: 5rem 0;
 }
+
 
 /* about section */
 
@@ -59,7 +76,9 @@ body, h1, h2, h3, h4, h5, h6 {
     padding: 2px;
 }
 
+
 /* footer */
+
 #footer-main {
     background: #222;
     color: white;
