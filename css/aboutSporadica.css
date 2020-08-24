@@ -39,9 +39,8 @@ h2 {
     line-height: 60px;
 }
 
-img {
-    max-width: 100%;
-}
+
+
 
 a.btn {
     text-decoration: none;
@@ -65,58 +64,37 @@ footer {
     color: white;
 }
 
-.gallery {
-    margin: 5px;
-    border: 1px black;
-    float: left;
-    width: 250px;
-    position: relative;
+/* section content */
+
+.section-content {
+    padding: 5rem 0;
 }
 
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+/* about section */
+
+.about-text {
+    padding: 1.875rem;
+    
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #673ab7;
-    display: flex;
+.about-text i {
+    font-size: 20px;
+    padgding: 2px;
+}
+ #bg {
+            background: #201E20;
+            
+        }
+html,
+body {
     height: 100%;
+}
+
+img {
     max-width: 100%;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    align-items: center;
-    padding: 45px 20px;
-    opacity: 0;
 }
-
-.name {
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.description {
-    font-size: medium;
-    margin-top: 0.25em;
-}
-
-.overlay:hover {
-    opacity: 100;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#bg {
-    background: #201E20;
-    ;
-}
-
-.postion {
-    display: inline-block;
-    padding-right: 2px;
-}
+ .postion {
+            display: inline-block;
+            padding-right: 2px;
+        }

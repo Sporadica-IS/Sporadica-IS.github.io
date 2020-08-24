@@ -1,0 +1,23 @@
+/* CSS Document */
+
+
+
+
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+
+
+/* Changes position of caption */
+.carousel-caption {
+    top:30%;
+    bottom: auto;
+}
+.heading{font-size: 60px;text-shadow: 2px 2px #ff063d;}
+.sub-heading{font-size: 30px; text-shadow: 2px 2px #ff063d;}
