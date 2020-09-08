@@ -1,0 +1,1832 @@
+@import 'theme_color';
+@import 'variables';
+@import 'fonts';
+@import 'mixin';
+@import 'responsive';
+
+/* Core Stylesheet - 1.0 */
+
+/* :: 1.0 Import Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+/* :: 2.0 Import All CSS */
+
+@import 'css/bootstrap.min.css';
+@import 'css/classy-nav.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/animate.css';
+@import 'css/magnific-popup.css';
+@import 'css/font-awesome.min.css';
+
+/* :: 3.0 Base CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fonts;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $fonts;
+    color: $heading-color;
+    line-height: 1.3;
+    font-weight: 700;
+
+}
+
+p {
+    font-family: $fonts;
+    color: $text-color;
+    font-size: 14px;
+    line-height: 2.1;
+    font-weight: 400;
+}
+
+a,
+a:hover,
+a:focus {
+    @include trans-duration(500ms);
+    text-decoration: none;
+    outline: 0 solid transparent;
+    color: $dark-color;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $fonts;
+}
+
+ul,
+ol {
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* :: 3.1.0 Spacing */
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-70 {
+    margin-top: 70px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.mb-70 {
+    margin-bottom: 70px !important;
+}
+
+.mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.ml-15 {
+    margin-left: 15px !important;
+}
+
+.ml-30 {
+    margin-left: 30px !important;
+}
+
+.ml-50 {
+    margin-left: 50px !important;
+}
+
+.mr-15 {
+    margin-right: 15px !important;
+}
+
+.mr-30 {
+    margin-right: 30px !important;
+}
+
+.mr-50 {
+    margin-right: 50px !important;
+}
+
+.pb-70 {
+    padding-bottom: 70px !important;
+}
+
+/* :: 3.2.0 Height */
+
+.height-400 {
+    height: 400px !important;
+}
+
+.height-500 {
+    height: 500px !important;
+}
+
+.height-600 {
+    height: 600px !important;
+}
+
+.height-700 {
+    height: 700px !important;
+}
+
+.height-800 {
+    height: 800px !important;
+}
+
+/* :: 3.3.0 Section Padding */
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+/* :: 3.4.0 Preloader */
+
+.preloader {
+    background-color: $hover-color;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    .spinner {
+        width: 70px;
+        text-align: center;
+        div {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+        .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+    }
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+/* :: 3.5.0 Miscellaneous */
+
+.section-title {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    @media #{$breakpoint-md} {
+        font-size: 30px;
+    }
+    @media #{$breakpoint-xs} {
+        font-size: 24px;
+    }
+}
+
+.tooltip-inner {
+    background-color: $hover-color;
+}
+
+.tooltip .arrow::before {
+    border-top-color: $hover-color;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 2;
+    background-position: center center;
+    background-size: cover;
+    &::after {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+    }
+}
+
+.bg-pattern {
+    position: relative;
+    z-index: 2;
+    &::after {
+        background-image: url(img/core-img/pattern.png);
+        background-repeat: repeat;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.bg-pattern2 {
+    position: relative;
+    z-index: 2;
+    &::after {
+        background-image: url(img/core-img/pattern2.png);
+        background-repeat: repeat;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.bg-fixed {
+    background-attachment: fixed !important;
+}
+
+/* :: 3.6.0 ScrollUp */
+
+#scrollUp {
+    background-color: $dark-color;
+    border-radius: 0;
+    bottom: 50px;
+    color: $white-color;
+    font-size: 24px;
+    height: 40px;
+    line-height: 37px;
+    right: 50px;
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+    @include trans-duration(500ms);
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: $hover-color;
+        color: $white-color;
+    }
+}
+
+/* :: 3.7.0 egames Button */
+
+.egames-btn {
+    background-color: $hover-color;
+    @include trans-duration(500ms);
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    min-width: 160px;
+    height: 50px;
+    color: $white-color;
+    border-radius: 0;
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    &:hover,
+    &:focus {
+        font-size: 14px;
+        font-weight: 500;
+        background-color: $dark-color;
+        color: $white-color;
+    }
+}
+
+/* :: 4.0 Header Area CSS */
+
+.header-area {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    .top-header-area {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 85px;
+        .top-search-area {
+            position: relative;
+            z-index: 1;
+            form {
+                position: relative;
+                z-index: 1;
+                width: 255px;
+                @media #{$breakpoint-xs} {
+                    width: 120px;
+                    margin-left: 15px;
+                }
+                @media #{$breakpoint-xs-landscape} {
+                    width: 160px;
+                }
+                @media #{$breakpoint-sm} {
+                    width: 200px;
+                }
+                input {
+                    @include trans-duration(500ms);
+                    position: relative;
+                    z-index: 1;
+                    width: 100%;
+                    height: 42px;
+                    background-color: #ebf5f5;
+                    border: none;
+                    color: #ababab;
+                    font-size: 12px;
+                    font-style: italic;
+                    padding: 0 20px;
+                    &:focus {
+                        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+                button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 42px;
+                    z-index: 10;
+                    width: 50px;
+                    background-color: transparent;
+                    border: none;
+                    color: #555555;
+                    cursor: pointer;
+                    &:hover,
+                    &:focus {
+                        color: $hover-color;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .login-area {
+            position: relative;
+            z-index: 1;
+            a {
+                display: block;
+                width: 160px;
+                height: 42px;
+                background-color: $pri-color;
+                text-align: center;
+                color: #fff;
+                line-height: 42px;
+                font-size: 14px;
+                margin-left: 10px;
+                font-weight: 400;
+                @media #{$breakpoint-xs} {
+                    width: 30px;
+                }
+                @media #{$breakpoint-xs-landscape} {
+                    width: 50px;
+                }
+                &:hover,
+                &:focus {
+                    background-color: $dark-color;
+                    font-weight: 400;
+                }
+                i {
+                    display: none;
+                    line-height: 42px;
+                    @media #{$breakpoint-xs} {
+                        display: block;
+                    }
+                }
+                span {
+                    @media #{$breakpoint-xs} {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .egames-main-menu {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        .classy-navbar {
+            height: 70px;
+            padding: 0;
+            @media #{$breakpoint-md} {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+            }
+            @media #{$breakpoint-xs} {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+            }
+            .nav-brand {
+                max-width: 160px;
+                margin-right: 30px;
+            }
+            .classynav ul li a {
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 16px;
+                padding: 0 10px;
+                color: #545454;
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+            }
+            .classynav > ul > li:first-child a {
+                padding-left: 0;
+                @media #{$breakpoint-md} {
+                    padding-left: 10px;
+                }
+                @media #{$breakpoint-xs} {
+                    padding-left: 10px;
+                }
+            }
+            .classynav ul li ul li a {
+                color: $sec-color;
+                font-size: 14px;
+                padding: 0 20px;
+            }
+        }
+        .top-social-info {
+            a {
+                font-size: 14px;
+                color: #545454;
+                display: inline-block;
+                margin-left: 30px;
+                @media #{$breakpoint-md} {
+                    margin-left: 0;
+                    margin-right: 30px;
+                }
+                @media #{$breakpoint-xs} {
+                    margin-left: 0;
+                    margin-right: 15px;
+                }
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+    .is-sticky {
+        .egames-main-menu {
+            z-index: 9999;
+            box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+/* :: 5.0 Hero Area CSS */
+
+.hero-area {
+    position: relative;
+    z-index: 1;
+    .owl-prev {
+        display: none !important;
+    }
+    .owl-next {
+        position: absolute;
+        width: 133px;
+        height: 52px;
+        top: 50%;
+        margin-top: -26px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $white-color;
+        text-transform: capitalize;
+        background-color: $hover-color;
+        right: 50px;
+        text-align: center;
+        @include trans-duration(500ms);
+        line-height: 52px;
+        @media #{$breakpoint-xs} {
+            width: 80px;
+            height: 34px;
+            line-height: 34px;
+            margin-top: -17px;
+            font-size: 11px;
+            right: 15px;
+        }
+        &:hover {
+            background-color: $dark-color;
+            color: $white-color;
+        }
+    }
+}
+
+.single-slide {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 790px;
+    @media #{$breakpoint-lg} {
+        height: 700px;
+    }
+    @media #{$breakpoint-md} {
+        height: 600px;
+    }
+    @media #{$breakpoint-xs} {
+        height: 450px;
+    }
+    .blog-content {
+        @include trans-duration(500ms);
+        padding: 80px;
+        border-left: 2px solid $pri-color;
+        background-color: rgba(0, 0, 0, 0.6);
+        @media #{$breakpoint-md} {
+            padding: 50px;
+        }
+        @media #{$breakpoint-xs} {
+            padding: 30px 20px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 60px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            @media #{$breakpoint-lg} {
+                font-size: 42px;
+            }
+            @media #{$breakpoint-md} {
+                font-size: 36px;
+            }
+            @media #{$breakpoint-xs} {
+                font-size: 24px;
+            }
+        }
+        p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+            @media #{$breakpoint-xs} {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+/* :: 6.0 Games Area CSS */
+
+.single-games-area {
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: #cdcdcd;
+        top: 0;
+        right: -6.5px;
+        position: absolute;
+        z-index: 1;
+        @media #{$breakpoint-xs} {
+            display: none;
+        }
+    }
+    img {
+        max-height: 55px;
+        margin: 0 auto;
+        display: block;
+        @media #{$breakpoint-md} {
+            max-height: 40px;
+        }
+        @media #{$breakpoint-xs} {
+            max-height: 40px;
+        }
+    }
+}
+
+.games-area {
+    position: relative;
+    z-index: 1;
+    .col-12:last-child .single-games-area:after {
+        display: none;
+    }
+}
+
+.pagination {
+    .page-item {
+        .page-link {
+            background-color: transparent;
+            font-size: 16px;
+            color: $heading-color;
+            text-transform: uppercase;
+            text-align: center;
+            display: inline-block;
+            border-radius: 0;
+            padding: 0;
+            margin-right: 10px;
+            border: none;
+            font-weight: 600;
+            &:hover,
+            &:focus {
+                color: $hover-color;
+                box-shadow: none;
+            }
+        }
+        &.active {
+            .page-link {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+/* :: 7.0 Footer Area CSS */
+
+.footer-area {
+    position: relative;
+    z-index: 1;
+    background-color: #0c0c0c;
+    border-top: 1px solid #fff;
+    background-image: url(img/core-img/pattern.png);
+    background-repeat: repeat;
+    .single-footer-widget {
+        position: relative;
+        z-index: 1;
+        .widget-title {
+            display: block;
+            margin-bottom: 60px;
+            h4 {
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 0;
+                line-height: 1;
+            }
+        }
+        .widget-content {
+            p {
+                margin-bottom: 0;
+                color: #808080;
+            }
+            ul {
+                li {
+                    a {
+                        display: block;
+                        color: #808080;
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                        font-weight: 400;
+                        &:focus,
+                        &:hover {
+                            color: $hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copywrite-content {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        padding: 15px 0;
+        .copywrite-text {
+            font-size: 12px;
+            margin-bottom: 0;
+            color: #666666;
+            font-weight: 400;
+            @media #{$breakpoint-xs} {
+                margin-bottom: 10px;
+            }
+            @media #{$breakpoint-sm} {
+                margin-bottom: 0;
+            }
+            a {
+                color: #666666;
+                font-size: 12px;
+                font-weight: 400;
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+            }
+        }
+        .footer-nav {
+            position: relative;
+            z-index: 1;
+            ul {
+                @include display-flex(flex);
+                @include align-items(center);
+                @include justify-content-end;
+                @media #{$breakpoint-xs} {
+                    @include justify-content-start;
+                }
+            }
+            li {
+                a {
+                    position: relative;
+                    z-index: 1;
+                    color: #545454;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 0 15px;
+                    @media #{$breakpoint-xs} {
+                        padding: 0 5px;
+                    }
+                    &:hover,
+                    &:focus {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* :: 8.0 Blog Area CSS */
+
+.single-articles-area {
+    position: relative;
+    z-index: 1;
+    .article-thumbnail {
+        position: relative;
+        z-index: 1;
+        @include flex(0 0 38%);
+        max-width: 38%;
+        width: 38%;
+        overflow: hidden;
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+            @include trans-duration(500ms);
+        }
+        &::after {
+            @include trans-duration(500ms);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: rgba(32, 216, 218, 0.6);
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    .article-content {
+        position: relative;
+        z-index: 1;
+        @include flex(0 0 62%);
+        max-width: 62%;
+        width: 62%;
+        padding-left: 30px;
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            padding-left: 0;
+        }
+        .post-title {
+            font-size: 24px;
+            color: $heading-color;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+        .post-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 25px;
+            a {
+                font-size: 14px;
+                color: #6b6b6b;
+                font-weight: 700;
+                text-transform: uppercase;
+                &:first-child {
+                    margin-right: 30px;
+                    color: $pri-color;
+                }
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+            }
+        }
+        p {
+            color: #939393;
+            margin-bottom: 0;
+        }
+    }
+    &:hover,
+    &:focus {
+        .article-thumbnail {
+            &::after {
+                visibility: visible;
+                opacity: 1;
+            }
+            img {
+                @include transform(scale(1.1));
+            }
+        }
+    }
+    &.style-2 {
+        .article-content {
+            .post-title {
+                color: #fff;
+            }
+            p {
+                color: #c2c2c2;
+            }
+        }
+    }
+}
+
+.article-content {
+    position: relative;
+    z-index: 1;
+    .post-title {
+        @include trans-duration(500ms);
+        font-size: 30px;
+        color: #fff;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 10px;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    .post-meta {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 50px;
+        a {
+            font-size: 14px;
+            color: #6b6b6b;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover,
+            &:focus {
+                color: $hover-color;
+            }
+        }
+    }
+    p {
+        color: #939393;
+    }
+}
+
+.post-details-content {
+    position: relative;
+    z-index: 1;
+    .blog-thumbnail {
+        @include trans-duration(500ms);
+        position: relative;
+        z-index: 1;
+        img {
+            width: 100%;
+        }
+    }
+    .blog-content {
+        position: relative;
+        z-index: 1;
+        .post-title {
+            display: block;
+            font-size: 24px;
+            margin-bottom: 15px;
+            @include trans-duration(500ms);
+            @media #{$breakpoint-xs} {
+                font-size: 18px;
+            }
+        }
+        .post-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 50px;
+            a {
+                font-size: 14px;
+                color: #6b6b6b;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-right: 30px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+                @media #{$breakpoint-xs} {
+                    font-size: 12px;
+                    margin-right: 15px;
+                }
+            }
+        }
+        p {
+            line-height: 2.2;
+        }
+    }
+}
+
+.sidebar-area {
+    position: relative;
+    z-index: 1;
+}
+
+.single-video-widget {
+    background-color: #232323;
+    padding: 20px 15px;
+    border-bottom: 1px solid #fff;
+    @include trans-duration(500ms);
+    .video-thumbnail {
+        @include flex(0 0 80px);
+        max-width: 80px;
+        width: 80px;
+        margin-right: 15px;
+    }
+    .video-text {
+        position: relative;
+        z-index: 1;
+        a {
+            margin-bottom: 0;
+            line-height: 1.7;
+            color: #fff;
+            font-size: 15px;
+            display: block;
+            font-weight: 400;
+        }
+        span {
+            color: #747373;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+    .video-rating {
+        @include trans-duration(500ms);
+        @include flex(0 0 50px);
+        max-width: 50px;
+        width: 50px;
+        margin-left: 15px;
+        background-color: $pri-color;
+        height: 30px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    &:hover,
+    &:focus {
+        background-color: $hover-color;
+        .video-rating {
+            background-color: #232323;
+        }
+    }
+}
+
+.single-widget-area {
+    position: relative;
+    z-index: 1;
+    .widget-title {
+        margin-bottom: 50px;
+        font-weight: 600;
+    }
+    &.add-widget {
+        margin-bottom: 160px;
+        .side-img {
+            position: absolute;
+            bottom: -80px;
+            z-index: 10;
+            width: 80%;
+            right: -40px;
+            @media #{$breakpoint-lg} {
+                right: -30px;
+            }
+            @media #{$breakpoint-xs} {
+                right: 0;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &.video-widget {
+        margin-bottom: 80px;
+    }
+    &.post-widget {
+        .single-post-area {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .blog-thumbnail {
+                position: relative;
+                z-index: 1;
+                @include flex(0 0 80px);
+                max-width: 80px;
+                width: 80px;
+                margin-right: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+            .blog-content {
+                position: relative;
+                z-index: 1;
+                .post-title {
+                    display: block;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    @include trans-duration(500ms);
+                    font-weight: 600;
+                    &:hover,
+                    &:focus {
+                        color: $hover-color;
+                    }
+                }
+                span {
+                    display: block;
+                    color: #747373;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.comment_area {
+    position: relative;
+    z-index: 1;
+    .comment-content {
+        .comment-author {
+            @include flex(0 0 80px);
+            min-width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .comment-meta {
+            margin-bottom: 30px;
+            .post-author {
+                font-size: 16px;
+                display: block;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-transform: capitalize;
+            }
+            .post-date {
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                color: $pri-color;
+                margin-bottom: 10px;
+            }
+            .reply {
+                position: relative;
+                z-index: 1;
+                margin-bottom: 0;
+                display: block;
+                font-size: 12px;
+                color: $heading-color;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .single_comment_area {
+        margin-bottom: 30px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .children {
+        .single_comment_area {
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+    }
+}
+
+/* :: 9.0 Monthly Picks Area CSS */
+
+.monthly-picks-area {
+    position: relative;
+    z-index: 1;
+    background-color: #0e0e0e;
+    overflow: hidden;
+    .nav-tabs {
+        border-bottom: 2px solid #323232;
+        margin-bottom: 80px;
+        .nav-item {
+            .nav-link {
+                padding: 0 25px;
+                height: 56px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 56px;
+                border-radius: 0;
+                border: none;
+                &:hover {
+                    border: none;
+                }
+                &.active {
+                    background-color: $pri-color;
+                }
+                @media #{$breakpoint-xs} {
+                    padding: 0 20px;
+                    height: 42px;
+                    line-height: 42px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.single-games-slide {
+    position: relative;
+    z-index: 1;
+    .slide-text {
+        margin-top: 30px;
+        .game-title {
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            @media #{$breakpoint-xs} {
+                font-size: 16px;
+            }
+            &:hover,
+            &:focus {
+                color: $hover-color;
+            }
+        }
+        .meta-data {
+            position: relative;
+            z-index: 1;
+            a {
+                font-size: 12px;
+                color: #6b6b6b;
+                font-weight: 700;
+                text-transform: uppercase;
+                &:first-child {
+                    margin-right: 15px;
+                }
+                &:last-child {
+                    color: $hover-color;
+                }
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
+
+.popular-games-slideshow,
+.latest-games-slideshow,
+.editor-games-slideshow {
+    position: relative;
+    z-index: 1;
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        margin-top: -30px;
+        font-size: 16px;
+        color: $white-color;
+        background-color: rgba(13, 13, 13, 0.7);
+        left: 22%;
+        text-align: center;
+        @include trans-duration(500ms);
+        line-height: 60px;
+        @media #{$breakpoint-lg} {
+            left: 15%;
+        }
+        @media #{$breakpoint-md} {
+            left: 15%;
+        }
+        @media #{$breakpoint-xs} {
+            left: 5%;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            line-height: 40px;
+        }
+        &:hover {
+            background-color: $hover-color;
+            color: $white-color;
+        }
+    }
+    .owl-next {
+        left: auto;
+        right: 22%;
+        @media #{$breakpoint-lg} {
+            right: 15%;
+        }
+        @media #{$breakpoint-md} {
+            right: 15%;
+        }
+        @media #{$breakpoint-xs} {
+            right: 5%;
+        }
+    }
+}
+
+.left-right-pattern {
+    position: relative;
+    z-index: 6000;
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 2000px;
+        top: -500px;
+        left: 1110px;
+        content: '';
+        background-color: rgba(14, 14, 14, 0.8);
+        background-image: url(img/core-img/pattern.png);
+        z-index: 6000;
+        @media #{$breakpoint-lg} {
+            left: 930px;
+        }
+        @media #{$breakpoint-md} {
+            left: 690px;
+        }
+        @media #{$breakpoint-xs} {
+            display: none;
+        }
+    }
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 2000px;
+        top: -500px;
+        left: -1110px;
+        content: '';
+        background-color: rgba(14, 14, 14, 0.8);
+        background-image: url(img/core-img/pattern.png);
+        z-index: 6000;
+        @media #{$breakpoint-lg} {
+            left: -930px;
+        }
+        @media #{$breakpoint-md} {
+            left: -690px;
+        }
+        @media #{$breakpoint-xs} {
+            display: none;
+        }
+    }
+}
+
+/* :: 10.0 Video Area CSS */
+
+.egames-video-area {
+    position: relative;
+    z-index: 1;
+    .egames-nav-btn {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 590px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        @media #{$breakpoint-md} {
+            height: 400px;
+        }
+        @media #{$breakpoint-xs} {
+            height: 400px;
+        }
+    }
+    .nav-link {
+        padding: 0;
+        .video-text {
+            .video-title {
+                color: #fff;
+            }
+            span {
+                font-size: 10px;
+            }
+        }
+        &.active {
+            .single-video-widget {
+                background-color: $pri-color;
+                .video-rating {
+                    background-color: $heading-color;
+                }
+            }
+        }
+    }
+    .video-playground {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 590px;
+        border-left: 1px solid #fff;
+        @media #{$breakpoint-md} {
+            height: 400px;
+        }
+        @media #{$breakpoint-xs} {
+            height: 300px;
+        }
+        .play-btn a {
+            @include trans-duration(500ms);
+            position: absolute;
+            width: 74px;
+            height: 74px;
+            z-index: 100;
+            top: 50%;
+            left: 50%;
+            margin-top: -37px;
+            margin-left: -37px;
+            background-color: rgba(255, 0, 0, 0.63);
+            border-radius: 50%;
+            text-align: center;
+            img {
+                padding: 25px 0;
+            }
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+/* :: 11.0 Game Review Area CSS */
+
+.single-game-review-area {
+    position: relative;
+    z-index: 1;
+    .game-thumbnail {
+        position: relative;
+        z-index: 1;
+        @include flex(0 0 42%);
+        max-width: 42%;
+        width: 42%;
+        overflow: hidden;
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+            @include trans-duration(500ms);
+        }
+        &::after {
+            @include trans-duration(500ms);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: rgba(32, 216, 218, 0.6);
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    .game-content {
+        position: relative;
+        z-index: 1;
+        @include flex(0 0 58%);
+        max-width: 58%;
+        width: 58%;
+        padding-left: 30px;
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            padding-left: 0;
+        }
+        .game-tag {
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #aaaaaa;
+        }
+        .game-title {
+            font-size: 24px;
+            color: $heading-color;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 10px;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+        .game-meta {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 15px;
+            a {
+                font-size: 14px;
+                color: #6b6b6b;
+                font-weight: 700;
+                text-transform: uppercase;
+                &:first-child {
+                    margin-right: 30px;
+                }
+                &:hover,
+                &:focus {
+                    color: $hover-color;
+                }
+            }
+        }
+        p {
+            color: #939393;
+            margin-bottom: 15px;
+        }
+        .download-rating-area {
+            position: relative;
+            z-index: 1;
+            .download-area {
+                a {
+                    display: inline-block;
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                    img {
+                        max-height: 36px;
+                        @media #{$breakpoint-xs} {
+                            max-height: 24px;
+                        }
+                    }
+                }
+            }
+            .rating-area {
+                h3 {
+                    font-size: 30px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+                .stars {
+                    font-size: 10px;
+                    i {
+                        color: #fbb710;
+                    }
+                }
+            }
+        }
+    }
+    &:hover,
+    &:focus {
+        .game-thumbnail {
+            &::after {
+                visibility: visible;
+                opacity: 1;
+            }
+            img {
+                @include transform(scale(1.1));
+            }
+        }
+    }
+    &.style-2 {
+        .game-content {
+            padding-left: 0;
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.single-game-img-slides {
+    position: relative;
+    z-index: 1;
+    .carousel-indicators {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 15px;
+        li {
+            @include flex(0 0 calc(16.66667% - 12.5px));
+            max-width: calc(16.66667% - 12.5px);
+            width: calc(16.66667% - 12.5px);
+            height: 150px;
+            margin-left: 0;
+            margin-right: 15px;
+            background-size: cover;
+            background-position: center center;
+            @media #{$breakpoint-lg} {
+                height: 100px;
+            }
+            @media #{$breakpoint-md} {
+                height: 80px;
+            }
+            @media #{$breakpoint-xs} {
+                height: 40px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.egames-barfiller {
+    position: relative;
+    z-index: 1;
+    @media #{$breakpoint-xs} {
+        margin-top: 100px;
+    }
+}
+
+.single-barfiller-area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    display: block;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .barfiller {
+        width: 100%;
+        height: 7px;
+        background: #dcdfff;
+        border: none;
+        position: relative;
+        margin-bottom: 20px;
+        box-shadow: none;
+        .fill {
+            display: block;
+            position: relative;
+            width: 0px;
+            height: 100%;
+            background: #333;
+            z-index: 1;
+        }
+        .tipWrap {
+            display: none;
+        }
+        .tip {
+            margin-top: 15px;
+            padding: 2px 4px;
+            font-size: 11px;
+            color: #424242;
+            left: 0px;
+            font-size: 14px;
+            position: absolute;
+            z-index: 2;
+            background: transparent;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #424242;
+        line-height: 1;
+        margin-top: 15px;
+    }
+}
+
+/* :: 12.0 Breadcrumb Area CSS */
+
+.breadcrumb-area {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 410px;
+    @media #{$breakpoint-lg} {
+        height: 370px;
+    }
+    @media #{$breakpoint-xs} {
+        height: 230px;
+    }
+    .breadcrumb-text {
+        @include trans-duration(500ms);
+        position: relative;
+        z-index: 1;
+        padding: 30px 60px;
+        border-left: 2px solid $pri-color;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: inline-block;
+        @media #{$breakpoint-xs} {
+            padding: 20px 40px;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 1;
+            margin-bottom: 0;
+            color: #fff;
+            font-weight: 400;
+            @media #{$breakpoint-xs} {
+                font-size: 24px;
+            }
+        }
+    }
+    &:hover {
+        .breadcrumb-text {
+            border-left: 2px solid #fff;
+            background-color: $hover-color;
+        }
+    }
+}
+
+/* :: 13.0 Contact Area CSS */
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.single-contact-info {
+    position: relative;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .title {
+        @include flex(0 0 99px);
+        max-width: 99px;
+        width: 99px;
+        height: 32px;
+        background-color: $pri-color;
+        text-align: center;
+        margin-right: 20px;
+        p {
+            color: #fff;
+            line-height: 32px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
+
+.contact-form-area {
+    .form-control {
+        position: relative;
+        z-index: 2;
+        height: 45px;
+        width: 100%;
+        background-color: #eff4f9;
+        font-size: 12px;
+        margin-bottom: 30px;
+        border-radius: 0;
+        padding: 15px 30px;
+        font-weight: 600;
+        font-style: italic;
+        color: #ababab;
+        @include trans-duration(500ms);
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    textarea.form-control {
+        height: 190px;
+    }
+}
+
+.map-area {
+    position: relative;
+    z-index: 2;
+    iframe {
+        width: 100%;
+        height: 515px;
+        border: none;
+        margin-bottom: 0;
+        @media #{$breakpoint-xs} {
+            height: 300px;
+        }
+    }
+}
+
+/* ====== The End ====== */

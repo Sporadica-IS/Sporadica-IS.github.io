@@ -1,316 +1,385 @@
-<!doctype html>
-<html lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sporadica Studios - Coding Africa to Greatness</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/png" href="img/s.png">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- CSS here -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Montserrat", sans-serif
-        }
-        
-        li,
-        a,
-        .logo .btn {
-            font-family: "Montserrat", sans-serif
-        }
-        
-        li,
-        a {
-            font-weight: 500;
-            font-size: 18px;
-            text-decoration: none;
-            color: black;
-        }
-        
-        .logo {
-            font-weight: 500;
-            font-size: 25px;
-            text-decoration: none;
-            color: white;
-            line-height: 60px;
-            margin-right: auto;
-        }
-        
-        h2 {
-            line-height: 60px;
-        }
-        
-        img {
-            max-width: 100%;
-        }
-        
-        a.btn {
-            text-decoration: none;
-            font-size: medium;
-            padding: 10px 20px;
-        }
-        
-        .btn {
-            border-radius: 10px;
-            max-width: 100%;
-            cursor: pointer;
-            border-color: #673ab7;
-            color: white;
-            background: #673ab7;
-            isolation: isolate;
-        }
-        
-        footer {
-            background: #4CAF50;
-            isolation: isolate;
-            color: white;
-        }
-        
-        .gallery {
-            margin: 5px;
-            border: 1px black;
-            float: left;
-            width: 250px;
-            position: relative;
-        }
-        
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #673ab7;
-            display: flex;
-            height: 100%;
-            max-width: 100%;
-            flex-direction: column;
-            font-family: "Montserrat", sans-serif;
-            color: white;
-            align-items: center;
-            padding: 45px 20px;
-            opacity: 0;
-        }
-        
-        .name {
-            font-size: x-large;
-            font-weight: bold;
-        }
-        
-        .description {
-            font-size: medium;
-            margin-top: 0.25em;
-        }
-        
-        .overlay:hover {
-            opacity: 100;
-            transition: 0.5s;
-            cursor: pointer;
-        }
-        
-        #bg {
-            background: #201E20;
-            ;
-        }
-        
-        .postion {
-            display: inline-block;
-            padding-right: 2px;
-        }
-    </style>
-
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>KΔΥΘS - Sporadica Studios</title>
+    <!-- Favicon -->
+    <link href="img/sporadica.normal.jpg" rel="icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-    <!-- Navbar -->
-    <nav class="navbar  navbar-expand-md navbar-dark" id="bg">
-
-        <ul class="postion ml-auto navbar-nav">
-            <li class="postion nav-item">
-                <a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                  </svg></a>
-            </li>
-            <li class="postion nav-item">
-                <a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M5.25 6.033h1.32c0-.781.458-1.384 1.36-1.384.685 0 1.313.343 1.313 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.007.463h1.307v-.355c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.326 0-2.786.647-2.754 2.533zm1.562 5.516c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                  </svg></a>
-            </li>
-            <li class="postion">
-                <a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-square-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                    <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                  </svg></a>
-            </li>
-        </ul>
-    </nav>
-
-    <nav class="navbar navbar-expand-md navbar-dark w3-deep-purple">
-        <a class="navbar-brand" href="index.html">Sporadica</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="About Sporadica.html">News feed</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                Games
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="mobile Games.html">Mobile</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="PC Games.html">PC</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                Appications
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Mobile App.html">Mobile</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="PC app.html">PC</a>
-                    </div>
-                </li>
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="About Sporadica.html">About Us</a>
-                </li>
-            </ul>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-    </nav>
-
     </div>
-    <header class="w3-container w3-white w3-center " style="padding:100px 16px ">
-        <h1 class="w3-margin w3-jumbo ">Welcome To Team KΔΥΘS </h1>
-        <h2 class="w3-margin w3-xlarge">Sporadica's Official Game Development team</h2>
-        <h3 class="w3-large">Open today until midnight</h4>
-            <h3><img src="img/bg-1.png"></h3>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area wow fadeInDown" data-wow-delay="500ms">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/core-img/sporadica.transparent.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="egames-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="egamesNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a>
+                                        <ul class="dropdown">
+                                            <li><a href="kayos.html">KΔΥΘS</a></li>
+                                            <li><a href="diktyo.html">δίκτυο</a></li>
+                                            <li><a href="syntaktik.html">SYNTΔKTÎK</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Games</a>
+                                        <ul class="dropdown">
+                                            <li><a href="kayos.html">Action</a></li>
+                                            <li><a href="diktyo.html">Adventure</a></li>
+                                            <li><a href="syntaktik.html">Acrade</a></li>
+                                            <li><a href="kayos.html">Board</a></li>
+                                            <li><a href="diktyo.html">Card</a></li>
+                                            <li><a href="syntaktik.html">Casino</a></li>
+                                            <li><a href="kayos.html">Casual</a></li>
+                                            <li><a href="diktyo.html">Puzzle</a></li>
+                                            <li><a href="diktyo.html">Trivia</a></li>
+                                            <li><a href="diktyo.html"> Word</a></li>
+                                            <li><a href="syntaktik.html">Racing</a></li>
+                                            <li><a href="kayos.html">Role Playing</a></li>
+                                            <li><a href="diktyo.html">Simulation</a></li>
+                                            <li><a href="kayos.html">Sports</a></li>
+                                            <li><a href="diktyo.html">Strategy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Applications & Utility Software </a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href=""></a>
+                                            </li>
+                                            <li>
+                                                <a href=""></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+
+
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Top Social Info -->
+                        <div class="top-social-info">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Dark/Normal Mode" class="toDark" onclick="darkMode()">🌓</a>
+                            <a href="https://www.instagram.com/sporadicastudios" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://web.facebook.com/Sporadica-Interactive-Studios-102400844789168" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/SporadicaS" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Sporadica-IS" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="w3-row-padding w3-padding-64 w3-container w3-light-grey ">
-        <div class="w3-content">
-            <div class="w3-twothird">
 
-                <p class="w3-text-black">This department of Sporadica Interactive Studios that focuses on creating games for PC, PS4, Xbox One, PS5, Xbox seriesX and other consles</p>
-            </div>
-
-        </div>
-    </div>
-    <div class="w3-row-padding w3-padding-64 w3-container w3-center w3-white" style=" padding:128px 16px ">
-
-        <h1 class="w3-margin w3-jumbo  ">Members Of Team KΔΥΘS</h1>
-        <div class="w3-center">
-            <div class="gallery">
-                <img src="img/fader.png">
-                <div class="overlay">
-                    <h4 class="name">Zikora Ogbuagu</h4>
-                    <p class="description">3D-Artist, Core programmer</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="img/steve.png">
-                <div class="overlay">
-                    <h4 class="name">Stephen Adebambo</h4>
-                    <p class="description">Core programmer, Sound engineer and 3D-Animator</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="img/chris.png">
-                <div class="overlay">
-                    <h4 class="name">Charles Arowolo</h4>
-                    <p class="description">3D-Artist, Core programmer</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="img/fortune.jpg">
-                <div class="overlay">
-                    <h4 class="name">Fortune Alebiosu</h4>
-                    <p class="description">Core, UI and funtionality programmer</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <img src="img/dtk.png">
-                <div class="overlay">
-                    <h4 class="name">Destiny Kefas</h4>
-                    <p class="description">Audio/Sound engineer, Core programmer</p>
+    <main>
+        <!-- ##### Header Area End ##### -->
+        <!-- ##### Breadcrumb Area Start ##### -->
+        <div class="breadcrumb-area bg-img bg-overlay" style="background-image: url(img/team/kayos/kayos.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breadcrumb Text -->
+                    <div class="col-12">
+                        <div class="breadcrumb-text">
+                            <h2>KΔΥΘS</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- ##### Breadcrumb Area End ##### -->
+        <!-- ##### Single Game Review Area Start ##### -->
+        <section class="single-game-review-area section-padding-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-game-img-slides">
+                            <div id="gameSlides" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/slide/slide-2.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/slide/slide-3.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/slide/slide-8.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/slide/slide-9.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/bg-img/38.jpg" alt="">
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#gameSlides" data-slide-to="0" class="active" style="background-image: url(img/slide/slide-2.jpg);"></li>
+                                    <li data-target="#gameSlides" data-slide-to="1" style="background-image: url(img/slide/slide-3.jpg);"></li>
+                                    <li data-target="#gameSlides" data-slide-to="2" style="background-image: url(img/slide/slide-8.jpg);"></li>
+                                    <li data-target="#gameSlides" data-slide-to="3" style="background-image: url(img/slide/slide-9.jpg);"></li>
+                                    <li data-target="#gameSlides" data-slide-to="4" style="background-image: url(img/bg-img/38.jpg);"></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <!-- *** Review Area *** -->
+                    <div class="col-12 col-md-6">
+                        <div class="single-game-review-area style-2 mt-70">
+                            <div class="game-content">
+                                <span class="game-tag">About Us</span>
+                                <a href="single-game-review.html" class="game-title">KΔΥΘS</a>
+                                <p>Sporadica is founded on nothing more than the passion for technology and the love of Africa. Our Products are centered around the African Ideology and are perpetual conveyors of that message.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ##### Monthly Picks Area Start ##### -->
+                    <section class="monthly-picks-area section-padding-10 toDark">
+                        <div class="container toDark">
+                            <div class="row toDark">
+                                <div class="col-12 toDark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container toDark">
+                            <div class="row toDark">
+                                <div class="col-12 toDark">
+                                    <!-- Title -->
+                                    <h2 class="section-title mb-70 wow fadeInUp toDark" data-wow-delay="100ms" style="text-align: center;">The Team</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content wow fadeInUp toDark" data-wow-delay="500ms" id="myTabContent">
+                            <div class="tab-pane fade show active toDark" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                                <!-- Popular Games Slideshow -->
+                                <div class="popular-games-slideshow owl-carousel toDark">
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/charles-arowolo.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Charles Arowolo</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/destiny-kefas.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Destiny Kefas</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/favour-ojo.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Favour Ojo</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/fortune-alebiosu.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Fortune Alebiosu</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/JIM.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Jibril Isa Musa</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/julius-ojabo.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Julius Ojabo</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/king-diablo.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">King Diablo</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/leonard.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Leonard</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/nwana-adaure.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Nwana Adaure</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/sinclair.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Sinclair</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/stephen-adebambo.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Stephen Adebambo</a>
+                                        </div>
+                                    </div>
+                                    <!-- Single Games -->
+                                    <div class="single-games-slide">
+                                        <img src="img/team/kayos/zikora-ogbuagu.jpg" alt="">
+                                        <div class="slide-text">
+                                            <a href="#" class="game-title">Zikora Ogbuagu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+    </main>
 
-    </div>
-    </div>
-    <div class="w3-row-padding  w3-padding-64 w3-container w3-center ">
-        <h1 class="w3-xxlarge ">Projects</h1>
-    </div>
-    <div class="w3-row-padding w3-padding-64 w3-container w3-center w3-light-grey" style="padding:128px 16px ">
-        <h2 class="w3-margin w3-xlarge ">Do You Want To Be A Part Of Team KΔΥΘS?</h2>
-        <a href="https://forms.gle/S63JqXP91spqjT6Q6 "><button class="btn hover ">Join Us</button>
+    <!-- ##### Monthly Picks Area End ##### -->
+    <!-- ##### Footer Area Start ##### -->
+    <footer id="footer" style="background-color: #000000; width: 100%;">
 
+        <div class="footer-top" style="background-color: #000000; width: 100%;">
+            <div class="container" style="background-color: #000000; width: 100%;">
+                <div class="row" style="background-color: #000000; width: 100%;">
+
+                    <div class="col-lg-3 col-md-6 footer-contact" style="background-color: #000000;">
+                        <h3 style="color: #7c1bbd">Sporadica Interactive Studios</h3>
+                        <p>
+                            <strong>Phone:</strong> +234 808 693 4518<br>
+                            <strong>Email:</strong> sporadicainteractive@gmail.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Game Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design and Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Application Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <p> latest news and update about our applications and games </p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <!--Toggle sidebar-->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
-        <!--Darkmode-->
-        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js "></script>
-        <script>
-            const options = {
-                bottom: '35px', // default: '32px'
-                right: '33px', // default: '32px'
-                left: 'unset', // default: 'unset'
-                time: '0.1s', // default: '0.3s'
-                mixColor: '#fff', // default: '#fff'
-                backgroundColor: '#fff', // default: '#fff'
-                buttonColorDark: '#100f2c', // default: '#100f2c'
-                buttonColorLight: '#fff', // default: '#fff'
-                saveInCookies: true, // default: true,
-                label: '🌓', // default: ''
-                autoMatchOsTheme: true // default: true
-            }
-            const darkmode = new Darkmode(options);
-            darkmode.showWidget();
-        </script>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="mr-md-auto text-center text-md-left">
+                <div class="copyright">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script><br/><strong><span>Sporadica Interactive Studios</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://Sporadica-IS.github.io" style="color: #FFFFFF">Sporadica Interactive Studio</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="https://twitter.com/SporadicaS" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://web.facebook.com/Sporadica-Interactive-Studios-102400844789168" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/sporadicastudios" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://github.com/Sporadica-IS" class="github"><i class="bx bxl-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script src="js/dark-mode.js"></script>
+
 </body>
+
+</html>
