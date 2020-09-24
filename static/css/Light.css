@@ -1,0 +1,98 @@
+.light {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.logo-header {
+    -webkit-filter: invert(0%);
+    filter: invert(0%);
+}
+
+.light p,
+.light h1,
+.light strong {
+    color: #000000;
+}
+
+.light .nav-menu .drop-down ul a {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.light #topbar {
+    background-color: #FFFFFF;
+}
+
+.light .nav-menu .drop-down ul {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: #eee 1px solid;
+}
+
+.light .mobile-nav a {
+    color: #000000;
+}
+
+.light .mobile-nav {
+    background-color: #FFFFFF;
+}
+
+.light .preloader {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.light .team {
+    background-color: #eee;
+    color: #000000;
+}
+
+.light .team strong,
+.light .team p,
+.light.row {
+    background-color: #eee;
+    color: #000000;
+}
+
+.light .member-info {
+    background-color: #FFFFFF;
+}
+
+.light .member-info h4 {
+    color: #000000;
+}
+
+.light #footer {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.light #footer .footer-newsletter form input[type="email"] {
+    background-color: #eee;
+    color: #000000;
+}
+
+.light #footer .footer-links h4 {
+    color: #000000;
+}
+
+.light #footer .credits a {
+    color: #000000;
+}
+
+.light #footer .footer-top .footer-links ul a {
+    color: rgba(17, 17, 17, 0.836);
+}
+
+.light #footer .footer-newsletter p {
+    color: rgba(17, 17, 17, 0.836);
+}
+
+.light #footer .footer-newsletter h4 {
+    color: rgba(17, 17, 17, 0.836);
+}
+
+.light #footer .footer-top .footer-contact p {
+    color: rgba(17, 17, 17, 0.836)
+}

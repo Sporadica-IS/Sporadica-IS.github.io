@@ -1,0 +1,107 @@
+.dark {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.logo-header {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.dark .member-info {
+    background-color: #000000;
+}
+
+.dark .member-info h4,
+.dark p,
+.dark h1 {
+    color: #FFFFFF;
+}
+
+.dark .team {
+    background-color: #050505;
+    color: #000000;
+}
+
+.dark .team strong,
+.dark .single-game-review-area,
+.dark .single-game-review-area .monthly-picks-area,
+.dark .single-game-review-area .monthly-picks-area strong,
+.dark .single-game-review-area .monthly-picks-area .game-title {
+    background-color: #050505;
+    color: #FFFFFF;
+}
+
+.dark .about-us strong {
+    color: #FFFFFF;
+}
+
+.dark #footer,
+.dark #footer .footer-top {
+    color: #fff;
+    background-color: #000000;
+}
+
+.dark .dark #footer .footer-newsletter form input[type="email"] {
+    background-color: #110f0f;
+    color: #FFFFFF;
+}
+
+.dark .nav-menu .drop-down ul a {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+.dark #topbar {
+    background-color: #000000;
+}
+
+.dark .nav-menu .drop-down ul {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: #050505 1px solid;
+}
+
+.dark #header,
+.dark .nav-menu ul a,
+.dark .preloader {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.dark #footer .social-links a,
+.dark #footer .footer-links h4 {
+    color: #FFFFFF;
+}
+
+.dark #footer .credits a {
+    color: #FFFFFF;
+}
+
+.dark #footer .footer-top .footer-links ul a {
+    color: rgba(238, 238, 238, 0.829);
+}
+
+.dark #footer .footer-newsletter p {
+    color: rgba(238, 238, 238, 0.829);
+}
+
+.dark #footer .footer-newsletter h4 {
+    color: rgba(238, 238, 238, 0.829);
+}
+
+.dark #topbar .contact-info a,
+.dark #topbar .social-links i,
+.dark .mobile-nav a {
+    color: #FFFFFF;
+}
+
+.dark .mobile-nav {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.dark #footer .footer-top .footer-contact p {
+    color: rgba(238, 238, 238, 0.829);
+}
